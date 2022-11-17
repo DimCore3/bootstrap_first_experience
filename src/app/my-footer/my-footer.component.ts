@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {NgbConfig} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-my-footer',
@@ -6,10 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./my-footer.component.scss']
 })
 export class MyFooterComponent implements OnInit {
-
-  constructor() { }
-
+  constructor(ngbConfig: NgbConfig) {
+    ngbConfig.animation = false;
+  }
   ngOnInit(): void {
   }
-
 }

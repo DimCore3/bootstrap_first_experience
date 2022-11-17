@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { BarNavigatorComponent } from './bar-navigator.component';
 
 describe('BarNavigatorComponent', () => {

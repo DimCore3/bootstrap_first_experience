@@ -6,7 +6,7 @@ import { BarNavigatorComponent } from './bar-navigator/bar-navigator.component';
 import { BtCarouselComponent } from './bt-carousel/bt-carousel.component';
 import { MainContentComponent } from './main-content/main-content.component';
 import { MyFooterComponent } from './my-footer/my-footer.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule, NgbPaginationModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -18,9 +18,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   ],
   imports: [
     BrowserModule,
-    NgbModule
+    NgbModule,
+    NgbPaginationModule,
+    NgbAlertModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
